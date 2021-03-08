@@ -1,0 +1,52 @@
+version: '2'
+
+services:
+  dev:
+    build: ./chemical.space
+    tty: true
+    restart: always
+    command: npm run dev
+    environment:
+      - HOST=0.0.0.0
+    volumes:
+      - ./chemical.space:/opt/app
+    ports:
+      - 80:3000
+    working_dir: /opt/app
+
+  dev-preview:
+    build: ./preview.chemical.space
+    tty: true
+    restart: always
+    command: npm run dev
+    environment:
+      - HOST=0.0.0.0
+    volumes:
+      - ./preview.chemical.space:/opt/app
+    ports:
+      - 8080:3000
+    working_dir: /opt/app
+
+  prod:
+    build: ./chemical.space
+    tty: true
+    restart: always
+    command: >
+      npm run start
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - 80:3000
+    depends_on:
+      - prod-preview
+
+  prod-preview:
+    build: ./preview.chemical.space
+    tty: true
+    restart: always
+    command: >
+      npm run start
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - 8080:3000

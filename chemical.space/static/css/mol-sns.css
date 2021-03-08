@@ -1,0 +1,11 @@
+#app {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 400px;
+    width: 640px;
+    height: 480px;
+}
+body {
+    font-family: sans-serif;
+    background: white;
+}
