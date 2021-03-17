@@ -8,7 +8,7 @@ A WEB portal for chemical space exploration.
 A simple 2D molecule editor using [Kekule.js](http://partridgejiang.github.io/Kekule.js/).  
 
 #### Load SMILES/CML from URL query.
-This editor is able to load SMILES and CML from URL queries.  
+This editor can load SMILES and CML from URL queries.  
 
 | query | type | format       | example                                    |
 | ----- | ---- | ------------ | ------------------------------------------ |
