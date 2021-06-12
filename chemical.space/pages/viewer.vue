@@ -31,7 +31,7 @@ export default {
         { name: 'twitter:title', content: 'Protein 3D Viewer: ' + this.$route.query.pdbid },
         { name: 'twitter:description', content: 'Protein 3D Viewer' },
         { name: 'twitter:image', content: ogp_image },
-        { name: 'twitter:player', content: 'https://chemical.space/viewer?pdbid=' + this.$route.query.pdbid },
+        { name: 'twitter:player', content: 'https://chemical.space/viewer?loadFromPDB=' + this.$route.query.loadFromPDB },
         { name: 'twitter:player:width', content: '512' },
         { name: 'twitter:player:height', content: '512' }
       ],

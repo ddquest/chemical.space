@@ -5,7 +5,6 @@ const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
   ssr: true,
-  target: 'static',
   /*
   ** Headers of the page
   */
