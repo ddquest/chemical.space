@@ -81,7 +81,9 @@ const load_rd_mol = async (smi) => {
   const ret = await RDKit.load()
   const rd_mol_org = RDKit.Molecule.smilesToMol(smi)
   rd_mol_org.setProp("_Name", smi)
-  rd_mol_org.compute2DCoords()
+  rd_mol_org.addHs()
+  rd_mol_org.EmbedMolecule()
+  rd_mol_org.removeHs()
   return rd_mol_org
 }
 

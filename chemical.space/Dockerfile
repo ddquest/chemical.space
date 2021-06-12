@@ -9,5 +9,3 @@ RUN npm install -g npm-check-updates
 RUN npm install
 
 RUN npm run build
-
-RUN npm run generate
