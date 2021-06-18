@@ -1,6 +1,9 @@
 # chemical.space
 A WEB portal for chemical space exploration.
 
+[![DOI](https://zenodo.org/badge/345307288.svg)](https://zenodo.org/badge/latestdoi/345307288)
+
+
 ## Cheminformatics tools
 [chemical.space](https://chemical.space) provides these WEB-based cheminformatics tools.
 
